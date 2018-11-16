@@ -1,0 +1,20 @@
+body {
+    background-image: url("../images/background-img.jpg");
+    background-size: 100%;
+}
+
+.container {
+    height: 500px;;
+    width: 80%;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.timer {
+    margin-bottom: 80px;
+}
