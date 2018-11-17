@@ -8,16 +8,18 @@ function assignValues() {
 assignValues();
 
 // Array of arrays; each sub-array holds the question first, and the 4 multiple choice answers
-var qAndA = [["question1", "answer1", "answer2", "answer3", "answer4"],
-["question2", "answer1", "answer2", "answer3", "answer4"],
-["question3", "answer1", "answer2", "answer3", "answer4"],
-["question4", "answer1", "answer2", "answer3", "answer4"],
-["question5", "answer1", "answer2", "answer3", "answer4"],
-["question6", "answer1", "answer2", "answer3", "answer4"],
-["question7", "answer1", "answer2", "answer3", "answer4"],
-["question8", "answer1", "answer2", "answer3", "answer4"],
-["question9", "answer1", "answer2", "answer3", "answer4"],
-["question10", "answer1", "answer2", "answer3", "answer4"]];
+var qAndA = [
+["What color is the sky?", "Purple", "Blue", "Colors are not real", "Red"],
+["What sound does a goat make?", "What is sound?", "Hiss", "Baaaa", "Goat"],
+["Who finished breakfast first?", "Rikki-Tikki-Tavi", "Peanut Butter and Jelly", "Bob Ross", "Charlie Murphy"],
+["Which direction is east?", "That way", "This way", "Upside-Down", "Did you say w-east?"],
+["What time is it?", "3:16", "Question is not specific enough", "Time is a human construct", "Time to get a watch!"],
+["Where did my pocket go?", "You never lost it", "It's on your pants", "Trick question", "Definitely not a trick question"],
+["What country is Asia located in?", "China", "India", "Mongolia", "Continent"],
+["Mentally exhausted yet? What is 16 multiplied by 9", "154", "12 squared", "125", "212"],
+["What is 13 squared?", "16 multiplied by 9", "243 - 74", "1 + 6 + 9", "A big number"],
+["Quick! 1573 + 695", "2438", "2192", "2268", "12"]
+];
 // Global variables
 var correct = 0;
 var wrong = 0;
@@ -49,9 +51,11 @@ function countDown() {
     $('#timeCount').text(timeRemaining);
     if (timeRemaining <= 0 && count1 === 10) {
         clearInterval(time);
+        answered.push("0")
         finalScreen();
     } else if (timeRemaining <= 0) {
         clearInterval(time);
+        answered.push("0");
         loadingScreen();
     }
 }
