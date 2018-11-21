@@ -3,7 +3,7 @@ var qAndA = [
 ["What is 3 multiplied by 6", "9", "1 + 8", "6 multiplied by 3", "19"],
 ["What is the circumference of Saturn", "235,298 miles", "212,947 miles", "97,515 miles", "170,194"],
 ["Who is Luke's father", "Jabba the Hutt", "Obi-Wan Kenobe", "Han Solo", "Anakin"],
-["One out of every 3000 cats is...", "Blind", "Polydactyl", "Deaf", "Male"],
+["One out of every 3000 calico cats is...", "Blind", "Polydactyl", "Deaf", "Male"],
 ["Where was Frodo taking the ring to", "Isengard", "Rivendell", "Shire", "Mordor"],
 ["Which NFL team is based in Missouri?", "Chiefs", "Colts", "Broncos", "Lions"],
 ["What snack smiles back?", "Twinkies", "Chips Ahoy", "Slim Jims", "Goldfish"],
